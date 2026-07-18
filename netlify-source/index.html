@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Legends Big Smoke · A Cigar Night with Karl Malone | Cuban Creations, New Orleans</title>
+<meta name="description" content="One night in the French Quarter. NBA Hall of Famer Karl Malone, seven hours of open premium bar, and over $100 in retail cigars in your hand. Hosted on the Cuban Creations terrace. Tickets are limited.">
+<!-- TODO(domain): meet meeting spec — host ticket purchase on a STANDALONE domain (legendsbigsmoke.com), NOT cubancreations.com, so Stripe/Google don't tobacco-flag the card processing. This page styled to match Cuban Creations brand per request. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<div class="scroll-prog" id="scrollProg"></div>
+
+<!-- ===================== NAV ===================== -->
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="brand-logo" href="#top" aria-label="Cuban Creations">
+      <img src="assets/img/cuban-creations-logo.png" alt="Cuban Creations · Cigar Bar New Orleans">
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#legend">The Legend</a>
+      <a href="#included">What's Included</a>
+      <a href="#tickets">Tickets</a>
+      <a href="#venue">The Venue</a>
+      <a href="#faq">FAQ</a>
+      <a href="#tickets" class="btn btn-gold nav-cta"><span class="shine"></span>Get Tickets</a>
+    </nav>
+    <button class="nav-burger" id="burger" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="top">
+  <div class="hero-glow"></div>
+  <canvas id="embers" aria-hidden="true"></canvas>
+  <div class="smoke"></div>
+  <div class="smoke-wisps" aria-hidden="true">
+    <span class="wisp w1"></span>
+    <span class="wisp w2"></span>
+    <span class="wisp w3"></span>
+    <span class="wisp w4"></span>
+  </div>
+  <div class="wrap">
+    <div class="hero-copy">
+      <img class="hero-emblem rise" src="assets/img/legends-emblem-lg.png" alt="Legends Cigar Festival — Big Smoke, New Orleans. Hosted by Karl Malone.">
+      <h1>Ready to Light One Up<span class="line2 gtx shimmer">With a Legend?</span></h1>
+      <p class="hero-sub">One night on the Cuban Creations terrace with NBA Hall of Famer <b>Karl Malone</b>. Seven hours of open premium bar. Over $100 in retail cigars in your hand. The Quarter will be packed. The terrace will be ours.</p>
+      <div class="hero-cta">
+        <a href="#tickets" class="btn btn-gold"><span class="shine"></span>Claim Your Spot</a>
+        <a href="#included" class="btn btn-ghost">See What's Inside</a>
+      </div>
+      <div class="hero-meta">
+        <div class="m"><b>Karl Malone</b><span>Your Host · NBA HOF</span></div>
+        <div class="m"><b>7 Hours</b><span>Open Premium Bar</span></div>
+        <div class="m"><b>$100+</b><span>Cigars To Keep</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hv-chip">Opening Weekend · Saints Home Game</div>
+      <div class="hv-main hv-ig">
+        <iframe src="https://www.instagram.com/reel/Da6djQlOeH8/embed" title="Legends Big Smoke — official Instagram reel" frameborder="0" scrolling="no" allowtransparency="true" allow="encrypted-media; picture-in-picture; web-share" loading="lazy"></iframe>
+      </div>
+      <div class="hv-badge">
+        <small>Hosted By</small>
+        <b>The Mailman</b>
+        2× NBA MVP · Hall of Fame
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== HOST / CREDIBILITY BAND ===================== -->
+<div class="host-band">
+  <div class="wrap host-row">
+    <div class="host-stat rise"><b data-count="14" data-suffix="×">14×</b><span>NBA All-Star</span></div>
+    <div class="pipe"></div>
+    <div class="host-stat rise"><b data-count="2" data-suffix="×">2×</b><span>League MVP</span></div>
+    <div class="pipe"></div>
+    <div class="host-stat rise"><b data-count="2010">2010</b><span>Hall of Fame</span></div>
+    <div class="pipe"></div>
+    <div class="host-stat rise"><b>Louisiana</b><span>Born & Raised</span></div>
+  </div>
+</div>
+
+<!-- ===================== PRESS / CREDIBILITY ===================== -->
+<div class="press">
+  <span>As featured at Cuban Creations</span>
+  <img src="assets/img/brand-cigar-aficionado.png" alt="Cigar Aficionado">
+  <img src="assets/img/brand-tripadvisor-travelers-choice.png" alt="TripAdvisor Travelers' Choice">
+</div>
+
+<!-- ===================== MEET THE LEGEND ===================== -->
+<section class="sec dark" id="legend">
+  <div class="wrap legend">
+    <div class="legend-photo rise">
+      <!-- Public-domain Louisiana Tech action photo (1982), brand-graded vintage gold. -->
+      <img src="assets/img/karl-malone-legend-v2.jpg" alt="Karl Malone playing for Louisiana Tech, 1982" data-slot="karl-portrait">
+      <div class="frame-note">
+        <b>Karl "The Mailman" Malone</b>
+        <span>Louisiana Tech, 1982 · before the NBA, before the Hall of Fame</span>
+      </div>
+    </div>
+    <div class="rise">
+      <p class="eyebrow on-dark">Meet Your Host</p>
+      <h2>A Louisiana legend, back home for one unforgettable night.</h2>
+      <p class="lead">He delivered for two decades on the hardwood. Now he is delivering a night you will tell stories about for years. Born in Summerfield and forged at Louisiana Tech, Karl Malone is coming to the French Quarter to share a cigar, a drink, and a few stories with a room full of people who appreciate the finer things.</p>
+      <p class="lead">This is not a meet-and-greet rope line. It is a celebration with a legend in the room, on a terrace built for exactly this kind of night.</p>
+      <ul class="cred-list">
+        <li><span class="dot"></span>2× NBA MVP</li>
+        <li><span class="dot"></span>14× NBA All-Star</li>
+        <li><span class="dot"></span>Naismith Hall of Fame</li>
+        <li><span class="dot"></span>Louisiana Tech great</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== WHAT'S INCLUDED / VALUE STACK ===================== -->
+<section class="sec espresso" id="included">
+  <div class="wrap">
+    <div class="sec-head rise">
+      <p class="eyebrow on-dark">One Ticket · Everything In</p>
+      <h2>Who could say no to a night like this?</h2>
+      <p class="lead">Every ticket is all-inclusive. No drink tabs. No upcharge at the humidor. Walk in, light up, and let the night take care of itself.</p>
+    </div>
+    <div class="stack">
+      <div class="stack-card rise">
+        <div class="ico">🚬</div>
+        <span class="val">$100+ value</span>
+        <h3>Premium Cigars To Keep</h3>
+        <p>Over $100 in retail cigars placed in your hand, pulled from the Cuban Creations humidor. Yours to enjoy that night or take home.</p>
+      </div>
+      <div class="stack-card rise">
+        <div class="ico">🥃</div>
+        <span class="val">7 hours</span>
+        <h3>Open Premium Bar</h3>
+        <p>Seven full hours of top-shelf pours. Bourbon, rum, cognac, cocktails. Real spirits, not well drinks.</p>
+      </div>
+      <div class="stack-card rise">
+        <div class="ico">🎙️</div>
+        <span class="val">Priceless</span>
+        <h3>A Legend In The Room</h3>
+        <p>Karl Malone, live and in person on the terrace. Stories, photos, and the kind of night you cannot buy twice.</p>
+      </div>
+      <div class="stack-card rise">
+        <div class="ico">🏛️</div>
+        <span class="val">French Quarter</span>
+        <h3>The Cuban Creations Terrace</h3>
+        <p>A private night on the second-story Toulouse Terrace balcony, in the heart of the Quarter on the city's biggest weekend.</p>
+      </div>
+    </div>
+    <div class="value-total rise">
+      <span class="vt-label">Real value of the night</span>
+      <span class="vt-strike">$400+</span>
+      <span class="vt-now">$250 all-inclusive</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== COCKTAILS & THE BAR ===================== -->
+<section class="sec light" id="cocktails">
+  <div class="wrap">
+    <div class="sec-head rise">
+      <p class="eyebrow olive">Seven Hours, Top-Shelf</p>
+      <h2>And the bar? <span class="gtx-sun">Wide open.</span></h2>
+      <p class="lead">This is New Orleans, so the pours match the room. Hand-built cocktails, craft spirits, and the house classics the French Quarter comes for. Order another. It's on the house.</p>
+    </div>
+    <div class="cocktails">
+      <div class="ck old rise">
+        <div class="ph"><img src="assets/img/cocktail-old-fashioned-v2.jpg" alt="Old Fashioned cocktail at Cuban Creations"></div>
+        <div class="meta"><span class="tag2">The Classic</span><h3>Old Fashioned</h3><p>Bourbon, bitters, and a slow burn. The cigar's best friend.</p></div>
+      </div>
+      <div class="ck sazerac rise">
+        <div class="ph"><img src="assets/img/cocktail-sazerac-v2.jpg" alt="Sazerac cocktail at Cuban Creations"></div>
+        <div class="meta"><span class="tag2">New Orleans Original</span><h3>Sazerac</h3><p>The city's own. Rye, absinthe, and Quarter history in a glass.</p></div>
+      </div>
+      <div class="ck mojito rise">
+        <div class="ph"><img src="assets/img/cocktail-mojito-v2.jpg" alt="Mojito cocktail at Cuban Creations"></div>
+        <div class="meta"><span class="tag2">Cuban Roots</span><h3>Mojito</h3><p>Rum, mint, and lime. Bright, cold, and built for the terrace.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== THE COMPANY / CROWD ===================== -->
+<section class="sec dark" id="company">
+  <div class="wrap">
+    <div class="sec-head center rise">
+      <p class="eyebrow on-dark">The Company You'll Keep</p>
+      <h2>Good cigars. Better <span class="gtx shimmer">company.</span></h2>
+      <p class="lead">A room full of people who get it. Toasts, laughter, and a legend holding court on the terrace.</p>
+    </div>
+    <div class="crowdgrid">
+      <figure class="cg tall rise"><img src="assets/img/crowd/crowd-woman-cigar.jpg" alt="Guest enjoying a premium cigar and champagne at Cuban Creations" loading="lazy"></figure>
+      <figure class="cg wide rise"><img src="assets/img/crowd/crowd-toast-men.jpg" alt="Inside the Cuban Creations lounge — leather seating beneath the historic fireplace" loading="lazy"></figure>
+      <figure class="cg tall rise"><img src="assets/img/crowd/crowd-man-savoring.jpg" alt="Guest savoring a premium cigar" loading="lazy"></figure>
+      <figure class="cg wide rise"><img src="assets/img/crowd/crowd-couple.jpg" alt="Couple celebrating at the event" loading="lazy"></figure>
+      <figure class="cg tall rise"><img src="assets/img/crowd/crowd-woman-smoke.jpg" alt="Guest enjoying the evening" loading="lazy"></figure>
+      <figure class="cg wide rise"><img src="assets/img/crowd/crowd-toast-hands.jpg" alt="A celebratory toast with cocktails and a cigar" loading="lazy"></figure>
+    </div>
+    <p class="crowd-note rise">Lifestyle imagery illustrative of the evening.</p>
+  </div>
+</section>
+
+<!-- ===================== TONIGHT'S HUMIDOR + BRANDS ===================== -->
+<section class="sec cream" id="humidor">
+  <div class="wrap">
+    <div class="sec-head rise">
+      <p class="eyebrow ember">Tonight's Humidor</p>
+      <h2>Over $100 in <span class="gtx-sun">world-class cigars</span>, in your hand.</h2>
+      <p class="lead">Your cigars come straight from the Cuban Creations humidor, the same selection that earned the lounge a place in <i>Cigar Aficionado</i>. The confirmed makers for the night:</p>
+    </div>
+
+    <!-- Giveaway brands confirmed by Andrew 2026-07-18 -->
+    <div class="brandwall brandwall-six">
+      <div class="brandcard brandtxt rise"><span>El Septimo</span></div>
+      <div class="brandcard brandtxt rise"><span>Oliva</span></div>
+      <div class="brandcard brandtxt rise"><span>La Aurora</span></div>
+      <div class="brandcard brandtxt rise"><span>Bocock Cigars</span></div>
+      <div class="brandcard brandtxt rise"><span>Ed Reed Cigars</span></div>
+      <div class="brandcard brandtxt rise"><span>Casa De Suenos</span></div>
+    </div>
+    <p class="lineup-note on-light">More makers join as they come onboard. The lineup keeps growing right up to event night.</p>
+  </div>
+</section>
+
+<!-- ===================== CHARITY ===================== -->
+<section class="sec dark" id="charity">
+  <div class="wrap">
+    <div class="sec-head center rise">
+      <p class="eyebrow on-dark">A Night That Gives Back</p>
+      <h2>Every ticket supports <span class="gtx shimmer">Louisiana.</span></h2>
+      <p class="lead">Legends Big Smoke proudly supports two hometown causes. Part of the night goes to the kids and communities that make Louisiana what it is.</p>
+    </div>
+    <div class="charities">
+      <a class="charity-card rise" href="https://bgcmetrolouisiana.org/" target="_blank" rel="noopener">
+        <div class="ch-ph"><img src="assets/img/charity-boys-girls-clubs.jpg" alt="Kids at the Boys and Girls Clubs of Metro Louisiana" loading="lazy"></div>
+        <div class="ch-meta">
+          <h3>Boys &amp; Girls Clubs of Metro Louisiana</h3>
+          <p>Empowering youth across metro Louisiana with safe places to learn, grow, and lead.</p>
+          <span class="ch-link">bgcmetrolouisiana.org</span>
+        </div>
+      </a>
+      <a class="charity-card rise" href="https://www.splitsecondfoundation.org/" target="_blank" rel="noopener">
+        <div class="ch-ph"><img src="assets/img/charity-split-second.jpg" alt="Split Second Foundation - transforming hope into action" loading="lazy"></div>
+        <div class="ch-meta">
+          <h3>Split Second Foundation</h3>
+          <p>Transforming hope into action for people living with disabilities across Louisiana.</p>
+          <span class="ch-link">splitsecondfoundation.org</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TICKETS ===================== -->
+<section class="sec dark" id="tickets">
+  <div class="wrap">
+    <div class="sec-head center rise">
+      <p class="eyebrow on-dark">Limited Tickets</p>
+      <h2>One ticket. One price. Everything in.</h2>
+      <p class="lead">No tiers, no upsells. Every guest gets the full night, and the terrace only holds so many. Tickets move fastest on opening weekend.</p>
+    </div>
+    <!-- Pricing confirmed by Andrew 2026-07-18: single $250 General Admission, no VIP. -->
+    <div class="tiers tiers-single">
+      <div class="tier featured rise">
+        <span class="tier-flag">All-Inclusive</span>
+        <h3>General Admission</h3>
+        <div class="t-sub">The full night, nothing held back</div>
+        <div class="price"><span class="now">$250</span></div>
+        <div class="per">per guest · limited to terrace capacity</div>
+        <ul>
+          <li>Full event access</li>
+          <li>$100+ in cigars to keep</li>
+          <li>7 hours open premium bar</li>
+          <li>Karl Malone live on the terrace</li>
+          <li>Part of the night supports two Louisiana charities</li>
+        </ul>
+        <a href="#checkout" class="btn btn-gold"><span class="shine"></span>Claim Your Ticket</a>
+      </div>
+    </div>
+    <div class="scarcity rise">
+      <span>Tickets are limited to what the terrace holds.</span>
+      <div class="bar"><i></i></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== HOW IT WORKS ===================== -->
+<section class="sec" id="how">
+  <div class="wrap">
+    <div class="sec-head rise">
+      <p class="eyebrow">Simple From Tap To Terrace</p>
+      <h2>Three steps and you're in.</h2>
+    </div>
+    <div class="steps">
+      <div class="step rise"><h3>Grab your ticket</h3><p>One all-inclusive $250 ticket. Check out in seconds with Apple Pay or any card.</p></div>
+      <div class="step rise"><h3>Get your e-ticket</h3><p>Your "Admit One" ticket lands in your inbox the moment you pay, stamped with the Legends emblem.</p></div>
+      <div class="step rise"><h3>Walk into the party</h3><p>Show your ticket at the door on event night. We check you in, you light up, the night begins.</p></div>
+    </div>
+    <!-- checkout anchor: wire to Stripe-hosted checkout per ticketing spec -->
+    <div id="checkout"></div>
+  </div>
+</section>
+
+<!-- ===================== E-TICKET SHOWCASE ===================== -->
+<section class="sec dark ticketshow" id="your-ticket">
+  <div class="wrap">
+    <div class="sec-head center rise">
+      <p class="eyebrow on-dark">Official Admission · Legends Cigar Festival</p>
+      <h2>One scan at the door. <span class="gtx">You're in.</span></h2>
+      <p class="lead">The second you check out, this lands in your inbox. Your name, your tier, and a scannable code. Show it at the door, we check you in, and the terrace is yours.</p>
+    </div>
+    <div class="ticket-wrap rise">
+      <img src="assets/img/legends-big-smoke-eticket-sample.jpg" alt="Legends Big Smoke e-ticket — Admit One, hosted by Karl Malone">
+    </div>
+    <div class="tk-points">
+      <div class="p rise">✦ <b>Instant delivery</b> by email</div>
+      <div class="p rise">✦ <b>Apple Pay</b> or any card</div>
+      <div class="p rise">✦ <b>Unique QR</b> per guest</div>
+      <div class="p rise">✦ <b>Print or phone</b> at the door</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== VENUE GALLERY ===================== -->
+<section class="sec espresso" id="venue">
+  <div class="wrap">
+    <div class="sec-head rise">
+      <p class="eyebrow on-dark">The Setting</p>
+      <h2>Cuban Creations. The Quarter's home for cigars.</h2>
+      <p class="lead">533 Toulouse Street. Leather, mahogany, a stocked humidor, and a second-story terrace overlooking the French Quarter. The kind of room a legend should be in.</p>
+    </div>
+    <div class="gallery">
+      <figure class="tall rise"><img src="assets/img/venue-balcony-v2.jpg" alt="Cuban Creations terrace balcony">
+        <figcaption>The Toulouse Terrace</figcaption></figure>
+      <figure class="rise"><img src="assets/img/venue-lounge-v2.jpg" alt="Cuban Creations lounge atmosphere">
+        <figcaption>The Lounge</figcaption></figure>
+      <figure class="rise"><img src="assets/img/venue-humidor-v2.jpg" alt="Cuban Creations humidor">
+        <figcaption>The Humidor</figcaption></figure>
+      <figure class="wide rise"><img src="assets/img/venue-pairing-v2.jpg" alt="Cigar and whiskey pairing">
+        <figcaption>Cigar & Whiskey Pairings</figcaption></figure>
+      <figure class="rise"><img src="assets/img/venue-leather-v2.jpg" alt="Leather lounge seating">
+        <figcaption>Sink In</figcaption></figure>
+      <figure class="rise"><img src="assets/img/venue-cigars-v2.jpg" alt="Luxury cigars at Cuban Creations">
+        <figcaption>The Selection</figcaption></figure>
+      <figure class="wide rise"><img src="assets/img/venue-exterior-v2.jpg" alt="Cuban Creations exterior, 533 Toulouse Street">
+        <figcaption>533 Toulouse Street</figcaption></figure>
+      <figure class="rise"><img src="assets/img/venue-whiskey-v2.jpg" alt="Cuban Creations whiskey bar">
+        <figcaption>Top-Shelf Bar</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section class="sec dark" id="faq">
+  <div class="wrap">
+    <div class="sec-head center rise">
+      <p class="eyebrow on-dark">Good To Know</p>
+      <h2>Your questions, answered.</h2>
+    </div>
+    <div class="faq">
+      <div class="q rise"><button>Is Karl Malone really going to be there?<span class="pm">+</span></button>
+        <div class="a"><p>Yes. Karl Malone is the host of the Legends Big Smoke event, live and in person on the Cuban Creations terrace for the night.</p></div></div>
+      <div class="q rise"><button>What is actually included in my ticket?<span class="pm">+</span></button>
+        <div class="a"><p>Every ticket includes over $100 in retail cigars to keep, seven hours of open premium bar, and full access to the event on the terrace with Karl Malone. It is all-inclusive once you are in.</p></div></div>
+      <div class="q rise"><button>When and where is it?<span class="pm">+</span></button>
+        <div class="a"><p>Cuban Creations, 533 Toulouse Street in the French Quarter, on the Saints' opening home weekend. <!-- TODO: confirm exact date with Andrew --> The exact date is confirmed at checkout and on your e-ticket.</p></div></div>
+      <div class="q rise"><button>Do I have to be 21?<span class="pm">+</span></button>
+        <div class="a"><p>Yes. This is a 21+ event with cigars and an open bar. Bring a valid government photo ID for entry.</p></div></div>
+      <div class="q rise"><button>How do I get in on the night?<span class="pm">+</span></button>
+        <div class="a"><p>Your e-ticket arrives by email the moment you pay. Show it at the door, we check you in against the guest list, and you are in.</p></div></div>
+      <div class="q rise"><button>Are tickets refundable?<span class="pm">+</span></button>
+        <div class="a"><p>Reach out to the event team for any ticket questions. <!-- TODO: confirm refund policy with Andrew before launch --></p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FINAL CTA ===================== -->
+<section class="final">
+  <div class="wrap">
+    <img class="cta-emblem rise" src="assets/img/legends-emblem-md.png" alt="Legends Cigar Festival emblem">
+    <p class="eyebrow on-dark center">Opening Weekend · The Terrace Is Ours</p>
+    <h2 class="rise">One night. One legend.<br><span class="gtx">Don't watch the stories. Live one.</span></h2>
+    <p class="rise">Tickets are $250, all-inclusive, and limited to what the terrace holds. When they are gone, they are gone.</p>
+    <a href="#tickets" class="btn btn-gold rise"><span class="shine"></span>Get Your Tickets</a>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand-logo" href="#top">
+          <img src="assets/img/cuban-creations-logo.png" alt="Cuban Creations · Cigar Bar New Orleans">
+        </a>
+        <img class="foot-emblem" src="assets/img/legends-emblem-md.png" alt="Legends Cigar Festival — hosted by Karl Malone">
+        <p style="margin-top:1rem">A Legends Big Smoke event on the Cuban Creations terrace. Premium cigars, top-shelf pours, and a legend in the room, in the heart of the French Quarter.</p>
+      </div>
+      <div>
+        <h4>The Event</h4>
+        <a href="#legend">Meet Karl Malone</a>
+        <a href="#included">What's Included</a>
+        <a href="#tickets">Tickets</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div>
+        <h4>The Venue</h4>
+        <a href="#venue">Cuban Creations</a>
+        <a href="#">533 Toulouse Street</a>
+        <a href="#">New Orleans, LA 70130</a>
+        <a href="#">French Quarter</a>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© 2026 Cuban Creations · A Legends Big Smoke Event. 21+ only. Please enjoy responsibly.</span>
+      <span>Built by Spectral Vision</span>
+    </div>
+    <p class="disc">
+      Image &amp; likeness notice (pre-launch): Karl Malone photos shown here are public-domain placeholders. Before going live, replace with official, licensed event photography and confirm name/likeness usage rights through Karl Malone's representation and Andrew. Cigar brand giveaways shown as profiles, not confirmed brands. See README pre-launch checklist.
+    </p>
+  </div>
+</footer>
+
+<!-- ===================== STICKY MOBILE CTA ===================== -->
+<div class="sticky-cta">
+  <div><b>$250</b><small>General Admission · all-inclusive</small></div>
+  <a href="#tickets" class="btn btn-gold"><span class="shine"></span>Get Tickets</a>
+</div>
+
+<script src="assets/main.js"></script>
+<!-- GHL chat widget (Legends Big Smoke sub-account g9ONjFqF7L3GDdi3z2E4) — visitor chats land in GHL Conversations; answered 24/7 by the "Legends Big Smoke Website Assistant" Conversation AI bot -->
+<script src="https://widgets.leadconnectorhq.com/loader.js"
+  data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
+  data-widget-id="6a5af81cc6e06ac8e869e9bb"></script>
+</body>
+</html>

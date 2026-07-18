@@ -1,0 +1,91 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+*{{margin:0;box-sizing:border-box}} html,body{{background:#0b0906}}
+.tk{{width:1100px;height:470px;position:relative;font-family:'Manrope',sans-serif;color:#EFE3C2;
+  background:
+    radial-gradient(120% 160% at 50% -30%,rgba(200,162,74,.16),transparent 55%),
+    repeating-linear-gradient(0deg,rgba(200,162,74,.05) 0 1px,transparent 1px 7px),
+    repeating-linear-gradient(90deg,rgba(200,162,74,.05) 0 1px,transparent 1px 7px),
+    repeating-radial-gradient(circle at 18% 120%,rgba(200,162,74,.075) 0 1.5px,transparent 1.5px 14px),
+    repeating-radial-gradient(circle at 85% -20%,rgba(200,162,74,.07) 0 1.5px,transparent 1.5px 16px),
+    linear-gradient(135deg,#221A0F,#150F09 55%,#1B140C);
+  border-radius:14px;overflow:hidden}}
+/* ornate double frame */
+.frame{{position:absolute;inset:10px;border:2px solid #C8A24A;border-radius:9px;pointer-events:none}}
+.frame::before{{content:'';position:absolute;inset:5px;border:1px solid rgba(200,162,74,.55);border-radius:6px}}
+.corner{{position:absolute;width:34px;height:34px;border:3px solid #E8C870;pointer-events:none}}
+.c-tl{{top:17px;left:17px;border-right:0;border-bottom:0;border-top-left-radius:8px}}
+.c-tr{{top:17px;right:17px;border-left:0;border-bottom:0;border-top-right-radius:8px}}
+.c-bl{{bottom:17px;left:17px;border-right:0;border-top:0;border-bottom-left-radius:8px}}
+.c-br{{bottom:17px;right:17px;border-left:0;border-top:0;border-bottom-right-radius:8px}}
+/* watermark star */
+.wm{{position:absolute;left:50%;top:50%;transform:translate(-50%,-52%);font-size:340px;line-height:1;
+  color:rgba(200,162,74,.055);font-family:serif;pointer-events:none}}
+/* layout */
+.inner{{position:absolute;inset:26px;display:flex}}
+.main{{flex:1;min-width:0;padding:24px 30px 20px 28px;display:flex;flex-direction:column;position:relative}}
+.topline{{display:flex;align-items:center;gap:16px;margin-bottom:8px;justify-content:space-between}}
+.emblem{{height:118px;width:auto;flex:none;filter:drop-shadow(0 4px 14px rgba(0,0,0,.55))}}
+.official{{margin-left:auto;text-align:right}}
+.official .badge{{display:inline-block;border:1.5px solid #C8A24A;color:#E8C870;border-radius:4px;
+  padding:5px 12px;font-size:10px;font-weight:800;letter-spacing:.3em;text-transform:uppercase}}
+.official small{{display:block;margin-top:5px;font-size:8.5px;letter-spacing:.2em;color:#9A875E;text-transform:uppercase}}
+.title{{font-family:'DM Serif Display',serif;font-size:31px;color:#fff;margin:2px 0 2px}}
+.title em{{font-style:italic;background:linear-gradient(100deg,#F0D488,#C8A24A);-webkit-background-clip:text;background-clip:text;color:transparent}}
+.venue{{font-size:12.5px;color:#C7B183;margin-bottom:auto}}
+.fields{{display:grid;grid-template-columns:1.35fr 1fr .8fr .9fr;gap:0;border:1px solid rgba(200,162,74,.4);
+  border-radius:8px;overflow:hidden;margin:14px 0 12px}}
+.fields .f{{padding:11px 16px 10px;border-right:1px solid rgba(200,162,74,.25);background:rgba(0,0,0,.22)}}
+.fields .f:last-child{{border-right:0}}
+.fields small{{display:block;font-size:8.5px;letter-spacing:.24em;text-transform:uppercase;color:#B39A61;margin-bottom:4px}}
+.fields b{{font-size:15px;color:#FFF7E0;font-weight:700}}
+.micro{{font-family:'IBM Plex Mono',monospace;font-size:6.5px;letter-spacing:.14em;color:rgba(200,162,74,.5);
+  white-space:nowrap;overflow:hidden;margin-bottom:8px}}
+.terms{{display:flex;justify-content:space-between;align-items:center;font-size:9.5px;color:#9A875E;letter-spacing:.08em}}
+.terms b{{color:#C7B183}}
+/* stub */
+.stub{{width:236px;flex:none;border-left:2px dashed rgba(200,162,74,.55);position:relative;
+  display:flex;flex-direction:column;align-items:center;text-align:center;padding:22px 18px 16px;
+  background:rgba(0,0,0,.3)}}
+.stub::before,.stub::after{{content:'';position:absolute;left:-13px;width:24px;height:24px;border-radius:50%;background:#0b0906}}
+.stub::before{{top:-38px}} .stub::after{{bottom:-38px}}
+.admit{{font-family:'DM Serif Display',serif;font-size:23px;letter-spacing:.12em;color:#E8C870}}
+.tier{{margin-top:7px;font-size:10px;font-weight:800;letter-spacing:.26em;text-transform:uppercase;color:#241A08;
+  background:linear-gradient(100deg,#F0D488,#C8A24A);padding:5px 16px;border-radius:3px}}
+.qr{{margin:14px 0 8px;padding:6px;background:rgba(234,217,168,.06);border:1.5px solid rgba(200,162,74,.5);border-radius:8px}}
+.qr img{{width:118px;height:118px;display:block}}
+.serial{{font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:600;letter-spacing:.18em;color:#FFF3D0}}
+.serial small{{display:block;font-family:'Manrope';font-size:7.5px;letter-spacing:.26em;text-transform:uppercase;color:#9A875E;margin-bottom:3px}}
+.age{{margin-top:auto;font-size:7.5px;letter-spacing:.18em;text-transform:uppercase;color:#8A7952}}
+</style></head><body>
+<div class="tk">
+  <div class="wm">&#9733;</div>
+  <div class="frame"></div>
+  <span class="corner c-tl"></span><span class="corner c-tr"></span><span class="corner c-bl"></span><span class="corner c-br"></span>
+  <div class="inner">
+    <div class="main">
+      <div class="topline">
+        <img class="emblem" src="{{EMBLEM_IMG_URL}}" alt="Legends Cigar Festival">
+        <div class="official"><span class="badge">Official Admission</span><small>Cuban Creations &middot; New Orleans</small></div>
+      </div>
+      <div class="title">One night. One legend. <em>Admit One.</em></div>
+      <div class="venue">The Toulouse Terrace at Cuban Creations &middot; 533 Toulouse Street, French Quarter &middot; 21+ with valid photo ID</div>
+      <div class="fields">
+        <div class="f"><small>Guest</small><b>{{GUEST_NAME}}</b></div>
+        <div class="f"><small>Date</small><b>{{EVENT_DATE}}</b></div>
+        <div class="f"><small>Doors</small><b>{{DOORS_TIME}}</b></div>
+        <div class="f"><small>Tier</small><b>{{TIER}}</b></div>
+      </div>
+      <div class="micro">LEGENDSBIGSMOKE&middot;OFFICIALADMISSION&middot;{{TICKET_ID}}&middot;LEGENDSBIGSMOKE&middot;OFFICIALADMISSION&middot;{{TICKET_ID}}&middot;LEGENDSBIGSMOKE&middot;OFFICIALADMISSION&middot;{{TICKET_ID}}&middot;LEGENDSBIGSMOKE&middot;OFFICIALADMISSION</div>
+      <div class="terms"><span>Includes <b>$100+ premium cigars</b> &amp; <b>7-hour open premium bar</b></span><span>Non-transferable &middot; Rain or shine</span></div>
+    </div>
+    <div class="stub">
+      <div class="admit">ADMIT ONE</div>
+      <div class="tier">{{TIER}}</div>
+      <div class="qr"><img src="{{QR_IMG_URL}}"></div>
+      <div class="serial"><small>Serial No.</small>{{TICKET_ID}}</div>
+      <div class="age">Scan once at door &middot; 21+ ID required</div>
+    </div>
+  </div>
+</div></body></html>
