@@ -75,7 +75,7 @@
 (function () {
   var NET = 'https://cdn.jsdelivr.net/gh/markspectralvision/legends-big-smoke-assets@main/';
   var CSS8 = [
-    '.tiers-single{grid-template-columns:min(430px,100%);justify-content:center}',
+    '.tiers-single{display:grid;grid-template-columns:min(430px,100%);justify-content:center;justify-items:stretch;gap:26px}',
     '.tiers-single .tier.featured{transform:none}',
     '.brandwall-six{grid-template-columns:repeat(3,1fr)}',
     '@media(max-width:680px){.brandwall-six{grid-template-columns:repeat(2,1fr)}}',
